@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'urae';
+    src:url('urae_nium.ttf');
+}
+
 body {
     background-color:#0B0A10;
+}
+
+.col-sm-6 {
+	color: #FF77FF;
+}
+
+.col-sm-3 img {
+	height: 90px;
 }
