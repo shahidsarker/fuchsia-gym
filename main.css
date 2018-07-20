@@ -1,3 +1,7 @@
+/* color scheme:
+#0B0A10, #B6287B, #09EEF1, #061C51, #F9C10D;
+ */
+
 @font-face {
     font-family: 'urae';
     src:url('urae_nium.ttf');
@@ -6,6 +10,14 @@
 body {
     background-color:#0B0A10;
 }
+
+
+
+.trainer {
+    background-color:white;
+    height:350px;
+}
+
 
 .col-sm-6 {
 	color: #FF77FF;
