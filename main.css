@@ -47,3 +47,39 @@ body {
     background-image:url('sharna.png');
     background-size:300px;
 }
+
+
+
+.col-sm-6 {
+	color: #FF77FF;
+    margin-top: 30px;
+    margin-left: 266px;
+    font-size: 86px;
+    font-family: 'urae';
+    letter-spacing: 5px;
+}
+
+.col-sm-3 img {
+	height: 148px;
+	transform: rotate(23deg);
+   animation: pulse 1s infinite;
+   animation-duration: 4s;
+  
+}
+
+@keyframes pulse {
+ 0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
