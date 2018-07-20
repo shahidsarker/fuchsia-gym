@@ -16,13 +16,31 @@ body {
     height:350px;
     border-radius:5px;
     overflow: hidden;
-    transition: 0.2s;
+    transition: border 0.2s;
+    transition: box-shadow 0.2s; 
+    display:flex;
+    align-content: center;
+    align-items: center;
 }
 
 .trainer:hover {
     cursor:pointer;
     border:1px solid #B6287B;
     box-shadow:0px 0px 80px #B6287B;
+}
+
+.trainer-name {
+    font-family:'urae';
+    font-size:100px;
+    color:black;
+    display:none;
+    transition: 0.2s;
+    transform: -30px;
+}
+
+.trainer:hover .trainer-name {
+    display:inline;
+    margin:auto;
 }
 
 #trainer-sharna {
