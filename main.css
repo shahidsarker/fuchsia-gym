@@ -15,8 +15,7 @@ body {
     background-color:white;
     height:350px;
     overflow: hidden;
-    transition: border 0.2s;
-    transition: box-shadow 0.2s; 
+    transition: 0.2s;
     display:flex;
     align-content: center;
     align-items: center;
@@ -33,8 +32,6 @@ body {
     font-size:100px;
     color:black;
     display:none;
-    transition: 0.2s;
-    transform: -30px;
 }
 
 .trainer:hover .trainer-name {
@@ -42,7 +39,7 @@ body {
     margin:auto;
 }
 
-#trainer-sharna {
+/* #trainer-sharna {
     background-image:url('sharna.png');
     background-size:300px;
-}
+} */
