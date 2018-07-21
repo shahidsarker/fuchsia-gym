@@ -11,6 +11,65 @@
     
 </head>
 <body>
+        <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+      </button> -->
+      
+      <!-- Modal for Sharna-->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Pokemon Trainer Sharna</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <!--Carousel-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="d-block w-100" alt="First slide">
+                                Pokemon 1
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-block w-100" alt="Second slide">
+                                Pokemon 2
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-block w-100" alt="Third slide">
+                                Pokemon 3
+                                </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div><!--Carousel end-->
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div> <!--end of Modal-->
+
+
         <!--Using Boostrap grid system to organize layout-->
         <div class="container">
                 <div class="row"><!--Header-->
@@ -32,7 +91,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="trainer" id="trainer-sharna">
+                        <div class="trainer" id="trainer-sharna" data-toggle="modal" data-target="#exampleModalCenter">
                                 <div class="trainer-name">Sharna</div>
                             <img class="trainer-img" src="sharna.png">
                         </div>
