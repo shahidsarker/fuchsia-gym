@@ -32,6 +32,14 @@ body {
     box-shadow:0px 0px 80px #B6287B;
 }
 
+#trainer-shahid:hover {
+    box-shadow:0px 0px 80px gold;
+}
+
+#shahid-name {
+    background-color: gold;
+}
+
 .trainer:hover .trainer-img {
     filter:grayscale(100%);
 }
@@ -65,6 +73,10 @@ body {
 #trainer-mariia img{
     z-index:0;
     width:350px;
+}
+
+#trainer-shahid {
+    border:1px gold solid;
 }
 
 #trainer-shahid img{
