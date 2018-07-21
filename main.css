@@ -1,7 +1,3 @@
-/* color scheme:
-#0B0A10, #B6287B, #09EEF1, #061C51, #F9C10D;
- */
-
 @font-face {
     font-family: 'urae';
     src:url('urae_nium.ttf');
@@ -9,12 +5,7 @@
 
 body {
     background-color:#0B0A10;
-     /*background-image: url("media/2.png"), url("media/3.png");
-
-     background-position: right bottom, left top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-
+    font-family:'urae';
 }
 
 
@@ -22,10 +13,8 @@ body {
 .trainer {
     background-color:white;
     height:350px;
-    border-radius:5px;
     overflow: hidden;
-    transition: border 0.2s;
-    transition: box-shadow 0.2s; 
+    transition: box-shadow 0.2s;
     display:flex;
     align-content: center;
     align-items: center;
@@ -33,17 +22,27 @@ body {
 
 .trainer:hover {
     cursor:pointer;
-    border:1px solid #B6287B;
     box-shadow:0px 0px 80px #B6287B;
+}
+
+.trainer:hover .trainer-img {
+    filter:grayscale(100%);
 }
 
 .trainer-name {
     font-family:'urae';
-    font-size:100px;
+    font-size:70px;
     color:black;
     display:none;
-    transition: 0.2s;
-    transform: -30px;
+    background-color:#B6287B;
+    height:90px;
+    padding-right:10px;
+    padding-left:10px;
+    border:1px black solid;
+    box-shadow:10px 10px black;
+    z-index:2000;
+    position:absolute;
+    left:60px;
 }
 
 .trainer:hover .trainer-name {
@@ -52,11 +51,14 @@ body {
 }
 
 #trainer-sharna {
-    background-image:url('sharna.png');
-    background-size:300px;
+    /* background-image:url('sharna.png');
+    background-size:310px; */
 }
 
-
+.trainer-img {
+    z-index:0;
+    width:310px;
+}
 
 .col-sm-6 {
 	color: #FF19FF;
@@ -136,7 +138,11 @@ body {
     margin-left: 585px;
     height: 581px;
     opacity: 0.2;
+}
 
+#gym-info {
+    color:#B6287B;
+    font-size:30px;
 }
 
 #second_splash {
