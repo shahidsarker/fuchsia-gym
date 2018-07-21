@@ -15,6 +15,7 @@ body {
     height:350px;
     overflow: hidden;
     transition: box-shadow 0.2s;
+    border:1px #B6287B solid;
     display:flex;
     align-content: center;
     align-items: center;
