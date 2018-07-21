@@ -61,6 +61,11 @@ body {
     width:350px;
 }
 
+#trainer-shahid img{
+    z-index:0;
+    width:300px;
+}
+
 .col-sm-6 {
 	color: #FF19FF;
     margin-top: 30px;
