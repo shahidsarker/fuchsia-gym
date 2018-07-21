@@ -69,8 +69,42 @@ class Gym {
     }
     show(trainer){
         // function that takes the trainer and displays it on the page
-        console.log(this.trainerContainer.trainer)
+        console.log(this.trainerContainer[`${trainer}`])
+        let trainerPokemonArray = Object.values(this.trainerContainer[`${trainer}`].trainerPokemon)
+// first pokemon
+        let trainerDivOne = document.getElementById(`${trainer}-pokemon-0`)
+        let pokeImage0 = document.createElement("img")
+        pokeImage0.setAttribute("src",trainerPokemonArray[0].frontURL)
+        trainerDivOne.appendChild(pokeImage0)
+        let pokeStatList0 = document.createElement("ul")
+        trainerDivOne.appendChild(pokeStatList0)
+        pokeStatList0.innerHTML= `<li>HP: ${trainerPokemonArray[0].hp}</li><li>Attack: ${trainerPokemonArray[0].attack}</li><li>Defense: ${trainerPokemonArray[0].defense}</li><li>Abilities:${trainerPokemonArray[0].ability[0]} </li><li>Type: ${trainerPokemonArray[0].types[0]}</li>`
+        // console.log(this.trainerPokemonArray[1])
+
+        // second pokemon
+        let trainerDivTwo = document.getElementById(`${trainer}-pokemon-1`)
+        let pokeImage1 = document.createElement("img")
+        pokeImage1.setAttribute("src",trainerPokemonArray[1].frontURL)
+        trainerDivOne.appendChild(pokeImage1)
+        let pokeStatList1 = document.createElement("ul")
+        trainerDivOne.appendChild(pokeStatList1)
+        pokeStatList1.innerHTML= `<li>HP: ${trainerPokemonArray[1].hp}</li><li>Attack: ${trainerPokemonArray[1].attack}</li><li>Defense: ${trainerPokemonArray[1].defense}</li><li>Abilities:${trainerPokemonArray[1].ability[0]} </li><li>Type: ${trainerPokemonArray[1].types[0]}</li>`
+
+        //third pokemon
+        let trainerDivThree = document.getElementById(`${trainer}-pokemon-2`)
+        let pokeImage2 = document.createElement("img")
+        pokeImage2.setAttribute("src",trainerPokemonArray[2].frontURL)
+        trainerDivOne.appendChild(pokeImage2)
+        let pokeStatList2 = document.createElement("ul")
+        trainerDivOne.appendChild(pokeStatList2)
+        pokeStatList2.innerHTML= `<li>HP: ${trainerPokemonArray[2].hp}</li><li>Attack: ${trainerPokemonArray[2].attack}</li><li>Defense: ${trainerPokemonArray[2].defense}</li><li>Abilities:${trainerPokemonArray[2].ability[0]} </li><li>Type: ${trainerPokemonArray[2].types[0]}</li>`
+
+
+
     }
+
+
+
 }
 
 
@@ -90,8 +124,20 @@ sharna.add(94)
 sharna.add(151)
 sharna.add(35)
 
+let noly = new Trainer("noly")
+noly.add("bellsprout")
+noly.add("charmander")
+noly.add("pidgeotto")
+
 
 let fuchsia = new Gym("fuchsia")
 fuchsia.add(shahid)
 fuchsia.add(mary)
 fuchsia.add(sharna)
+fuchsia.add(noly)
+
+
+// fuchsia.show("shahid")
+// fuchsia.show("noly")
+// fuchsia.show("sharna")
+// fuchsia.show("mary")
