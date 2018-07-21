@@ -14,7 +14,7 @@ class Pokemon {
 
 // Find value from search to pass into api.
 document.getElementById("trainer-shahid").addEventListener("click", function(event) {
-    let pokemons_shahid = ['combee', 'exeggutor', 'magneton'];
+    let pokemons_shahid = ['mewtwo', 'magmar', 'magikarp'];
     for (let i = 0; i < 3; i++) {
         let search_value = pokemons_shahid[i];
          search(search_value);
