@@ -8,6 +8,8 @@ body {
     font-family:'urae';
 }
 
+
+
 .trainer {
     background-color:white;
     height:350px;
@@ -59,12 +61,13 @@ body {
 }
 
 .col-sm-6 {
-	color: #BD217D;
+	color: #FF19FF;
     margin-top: 30px;
     margin-left: 266px;
     font-size: 86px;
     font-family: 'urae';
-    letter-spacing: 5px;
+    letter-spacing: 8px;
+
 }
 
 .col-sm-3 img {
@@ -87,11 +90,81 @@ body {
   }
 }
 
+#splash:nth-child(1) {
+	position: absolute;
+    z-index: -1;
+        margin-top: -452px;
+    width: 1520px;
+}
+
+
+.col-sm-6 {
+
+    animation: neon .08s ease-in-out infinite alternate;
+  }
+
+
+/*-- Animation Keyframes --*/
+
+/*// animation*/
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+
+#first_splash {
+
+	position: absolute;
+    z-index: -1;
+    margin-top: -536px;
+    margin-left: 585px;
+    height: 581px;
+    opacity: 0.2;
+}
+
 #gym-info {
     color:#B6287B;
     font-size:30px;
 }
 
+#second_splash {
+	position: absolute;
+    z-index: -1;
+    margin-top: -522px;
+    margin-left: -205px;
+    opacity: 0.2;
+}
+
+
+#third_splash {
+	position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    margin-left: 841px;
+    opacity: 0.3;
+}
+
+.row {
+	margin-top: 10px;
+}
 
 
 
