@@ -50,14 +50,14 @@ body {
     margin:auto;
 }
 
-#trainer-sharna {
-    /* background-image:url('sharna.png');
-    background-size:310px; */
-}
-
-.trainer-img {
+#trainer-sharna img{
     z-index:0;
     width:310px;
+}
+
+#trainer-mariia img{
+    z-index:0;
+    width:350px;
 }
 
 .col-sm-6 {
@@ -167,5 +167,14 @@ body {
 	margin-top: 10px;
 }
 
+.modal-content {
+    background: #190517; /* Old browsers */
+    color:white;
+}
 
-
+.close {
+    color:white;
+    opacity:1;
+} .close:hover {
+    color:#B6287B;
+}
