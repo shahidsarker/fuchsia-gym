@@ -15,7 +15,7 @@ class Trainer {
     constructor(trainerName) {
         this.trainerName = trainerName;
         this.trainerPokemon = {};
-        this.pokemonArray = [];
+        // this.pokemonArray = [];
     }
     all() {
         return Object.values(this.trainerPokemon)
@@ -65,7 +65,7 @@ class Gym {
         this.trainerContainer = {};
     }
     add(trainerObject) {
-        return this.trainerContainer.trainer = trainerObject;
+         this.trainerContainer[trainerObject.trainerName] = trainerObject;
     }
     show(trainer){
         // function that takes the trainer and displays it on the page
@@ -76,6 +76,22 @@ class Gym {
 
 
 let shahid = new Trainer("shahid")
+shahid.add(150)
+shahid.add(129)
+shahid.add(126)
+
+let mary = new Trainer("mary")
+mary.add("combee")
+mary.add("magneton")
+mary.add("exeggutor")
+
+let sharna = new Trainer("sharna")
+sharna.add(94)
+sharna.add(151)
+sharna.add(35)
+
 
 let fuchsia = new Gym("fuchsia")
 fuchsia.add(shahid)
+fuchsia.add(mary)
+fuchsia.add(sharna)
