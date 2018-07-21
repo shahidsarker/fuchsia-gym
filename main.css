@@ -41,7 +41,7 @@ body {
 }
 
 .trainer:hover .trainer-img {
-    filter:grayscale(100%);
+    filter:invert(100%);
 }
 
 .trainer-name {
@@ -80,6 +80,11 @@ body {
 }
 
 #trainer-shahid img{
+    z-index:0;
+    width:300px;
+}
+
+#trainer-noly img{
     z-index:0;
     width:300px;
 }
