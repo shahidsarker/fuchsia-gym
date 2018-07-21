@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <meta charset="utf-8" />
@@ -7,11 +8,13 @@
     <title>Fuchsia Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!--Bootstrap CDN must be first stylesheet!!-->
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
 </head>
+
 <body>
     
         <!--Using Boostrap grid system to organize layout-->
@@ -19,62 +22,241 @@
                 <div class="row"><!--Header-->
                     <div class="col-sm-6 col-md-5">FUCHSIA GYM</div>
                     <div class="col-sm-3"><img src="media/logo.png"></div>
+
+    <!-- Modal for Shahid-->
+    <div class="modal fade" id="shahidmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pokemon Trainer Shahid</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                            <p class="round">ROUND 1</p>
+                <div class="modal-body" id="shahid-modal-body">
+                    <div class="col-sm-4" id="shahid-pokemon-0">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
                     </div>
-                    <div class="col-sm-3">
-                            <p class="round">ROUND 2</p>
+                    <div class="col-sm-4" id="shahid-pokemon-1">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
                     </div>
-                    <div class="col-sm-3">
-                            <p class="round">ROUND 3</p>
+                    <div class="col-sm-4" id="shahid-pokemon-2">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
                     </div>
-                    <div class="col-sm-3">
-                            <p class="round">♔ FINAL ROUND</p>
-                    </div>
+
                 </div>
-                <div class="row"><!--Trainer portraits-->
-
-                    <div class="col-md-3">
-                            <div class="trainer" id="trainer-noly" data-toggle="modal" data-target="#nolymodal">
-                                <div class="trainer-name">Noly</div>
-                                <img class="trainer-img" src="noly.png">
-                            </div>
-                        </div>
-
-                    <div class="col-md-3">
-                        <div class="trainer" id="trainer-mariia" data-toggle="modal" data-target="#mariiamodal">
-                            <div class="trainer-name">Mariia</div>
-                            <img class="trainer-img" src="mariia.png">
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="trainer" id="trainer-sharna" data-toggle="modal" data-target="#sharnamodal">
-                                <div class="trainer-name">Sharna</div>
-                            <img class="trainer-img" src="sharna.png">
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                            <div class="trainer" id="trainer-shahid"  data-toggle="modal" data-target="#shahidmodal"><!--gym leader-->
-                                <div class="trainer-name" id="shahid-name">Shahid</div>
-                                <img class="trainer-img" src="media/shahid_trainer.png">
-    
-                            </div>
-                        </div>
-
-                </div><!--end of trainer row-->
-
-                
-            </div><!--end of boostradiv grid-->
-
-            <div id="splash">
-                <img id="first_splash" src="media/2.png">
-                <img id="second_splash" src="media/3.png">
-                <img id="third_splash" src="media/5.png">
             </div>
+        </div>
+    </div>
+    <!--end of Shahid Modal-->
+
+
+    <!-- Modal for Sharna-->
+    <div class="modal fade" id="sharnamodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pokemon Trainer Sharna</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="sharna-modal-body">
+                    <div class="col-sm-4" id="sharna-pokemon-0">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4" id="sharna-pokemon-1">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4" id="sharna-pokemon-2">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of Sharna Modal-->
+
+
+    <!-- Modal for Mariia-->
+    <div class="modal fade" id="mariiamodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pokemon Trainer Mariia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="mariia-modal-body">
+                    <div class="col-sm-4" id="mary-pokemon-0">
+                    </div>
+                    <div class="col-sm-4" id="mary-pokemon-1">
+
+                    </div>
+                    <div class="col-sm-4" id="mary-pokemon-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of Mariia Modal-->
+
+
+    <!-- Modal for Noly-->
+    <div class="modal fade" id="nolymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pokemon Trainer Noly</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="noly-modal-body">
+                    <div class="col-sm-4" id="noly-pokemon-0">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4" id="noly-pokemon-1">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4" id="noly-pokemon-2">
+
+                        <ul>
+                            <li>HP</li>
+                            <li>Attack</li>
+                            <li>Defense</li>
+                            <li>Abilities</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of Noly Modal-->
+
+
+
+
+
+    <!--Using Boostrap grid system to organize layout-->
+    <div class="container">
+        <div class="row">
+            <!--Header-->
+            <div class="col-sm-6 col-md-5">FUCHSIA GYM</div>
+            <div class="col-sm-3">
+                <img src="media/logo.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <p class="round">ROUND 1</p>
+            </div>
+            <div class="col-sm-3">
+                <p class="round">ROUND 2</p>
+            </div>
+            <div class="col-sm-3">
+                <p class="round">ROUND 3</p>
+            </div>
+            <div class="col-sm-3">
+                <p class="round">♔ FINAL ROUND</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--Trainer portraits-->
+
+            <div class="col-md-3">
+                <div class="trainer" id="trainer-noly" data-toggle="modal" data-target="#nolymodal">
+                    <div class="trainer-name">Noly</div>
+                    <img class="trainer-img" src="noly.png">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="trainer" id="trainer-mariia" data-toggle="modal" data-target="#mariiamodal">
+                    <div class="trainer-name">Mariia</div>
+                    <img class="trainer-img" src="mariia.png">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="trainer" id="trainer-sharna" data-toggle="modal" data-target="#sharnamodal">
+                    <div class="trainer-name">Sharna</div>
+                    <img class="trainer-img" src="sharna.png">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="trainer" id="trainer-shahid" data-toggle="modal" data-target="#shahidmodal">
+                    <!--gym leader-->
+                    <div class="trainer-name" id="shahid-name">Shahid</div>
+                    <img class="trainer-img" src="media/shahid_trainer.png">
+
+                </div>
+            </div>
+
+        </div>
+        <!--end of trainer row-->
+
+
+    </div>
+    <!--end of boostradiv grid-->
+
+    <div id="splash">
+        <img id="first_splash" src="media/2.png">
+        <img id="second_splash" src="media/3.png">
+        <img id="third_splash" src="media/5.png">
+    </div>
 
             <!-- Modal for Shahid-->
       <div class="modal fade" id="shahidmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -148,13 +330,17 @@
               </div> <!--end of Noly Modal-->
 
     <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!--All other scripts must come after the jquery, popper, and bootstrap-->
     <!-- <script src="main.js"></script> -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <script src="scratch.js"></script>
 </body>
+
 </html>
