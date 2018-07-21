@@ -57,7 +57,9 @@ body {
     box-shadow:10px 10px black;
     z-index:50;
     position:absolute;
-    left:60px;
+    left:50px;
+    text-align:center;
+    width:175px;
 }
 
 .trainer:hover .trainer-name {
