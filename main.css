@@ -210,7 +210,20 @@ body {
 
 .close {
     color:white;
-    opacity:1;
+    opacity:0.5;
 } .close:hover {
+    opacity:1;
+    color:white;
+}
+
+.modal-title {
+    font-family:'urae';
+    font-size:35px;
     color:#B6287B;
+} #shahid-title {
+    color:gold;
+}
+
+.modal-header {
+    border-bottom:none;
 }
