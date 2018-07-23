@@ -127,7 +127,8 @@ body {
     padding-bottom: 0; }
     .modal-content .modal-header .modal-title {
       font-family: 'urae';
-      font-size: 35px;
+      font-size: 40px;
+      margin-left: 100px;
       color: #B6287B; }
     .modal-content .modal-header #shahid-title {
       color: gold; }
@@ -143,7 +144,7 @@ body {
 .carousel-item li {
   list-style-type: none;
   padding: 0;
-  margin: 0; }
+  margin-right: 35px; }
 
 #history {
   height: 160px;
