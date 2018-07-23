@@ -204,7 +204,8 @@ li{
 
 .modal-title {
     font-family: 'urae';
-    font-size: 35px;
+    font-size: 40px;
+    margin-left: 100px;
     color: #B6287B;
 }
 
@@ -248,5 +249,5 @@ li{
 .carousel-item li {
     list-style-type: none;
     padding:0;
-    margin: 0;
+    margin-right: 35px;
 }
