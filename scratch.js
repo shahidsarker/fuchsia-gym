@@ -14,10 +14,10 @@ class Gym {
 
         // first pokemon
         let trainerDivOne = document.getElementById(`${trainer}-pokemon-0`)
-        let pokemonName = document.createElement("h4")
-        pokemonName.innerHTML= `${trainerPokemonArray[0].name}`
-        pokemonName.classList.add("text-capitalize")
-        trainerDivOne.appendChild(pokemonName)
+        let pokemonName0 = document.createElement("h4")
+        pokemonName0.innerHTML= `${trainerPokemonArray[0].name}`
+        pokemonName0.classList.add("text-capitalize")
+        trainerDivOne.appendChild(pokemonName0)
         let pokeImage0 = document.createElement("img")
         pokeImage0.setAttribute("src", trainerPokemonArray[0].frontURL)
         trainerDivOne.appendChild(pokeImage0)
@@ -28,6 +28,10 @@ class Gym {
 
         // second pokemon
         let trainerDivTwo = document.getElementById(`${trainer}-pokemon-1`)
+        let pokemonName1 = document.createElement("h4")
+        pokemonName1.innerHTML= `${trainerPokemonArray[1].name}`
+        pokemonName1.classList.add("text-capitalize")
+        trainerDivTwo.appendChild(pokemonName1)
         let pokeImage1 = document.createElement("img")
         pokeImage1.setAttribute("src", trainerPokemonArray[1].frontURL)
         trainerDivTwo.appendChild(pokeImage1)
@@ -37,6 +41,10 @@ class Gym {
 
         //third pokemon
         let trainerDivThree = document.getElementById(`${trainer}-pokemon-2`)
+        let pokemonName2 = document.createElement("h4")
+        pokemonName2.innerHTML= `${trainerPokemonArray[2].name}`
+        pokemonName2.classList.add("text-capitalize")
+        trainerDivThree.appendChild(pokemonName2)
         let pokeImage2 = document.createElement("img")
         pokeImage2.setAttribute("src", trainerPokemonArray[2].frontURL)
         trainerDivThree.appendChild(pokeImage2)
