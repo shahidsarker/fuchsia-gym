@@ -73,15 +73,18 @@ class Gym {
         // function that takes the trainer and displays it on the page
         console.log(this.trainerContainer[`${trainer}`])
         let trainerPokemonArray = Object.values(this.trainerContainer[`${trainer}`].trainerPokemon)
+        console.log(trainerPokemonArray);
 // first pokemon
         let trainerDivOne = document.getElementById(`${trainer}-pokemon-0`)
         let pokeImage0 = document.createElement("img")
+        console.log(trainerPokemonArray[0]);
         pokeImage0.setAttribute("src",trainerPokemonArray[0].frontURL)
+
         trainerDivOne.appendChild(pokeImage0)
         let pokeStatList0 = document.createElement("ul")
         trainerDivOne.appendChild(pokeStatList0)
         pokeStatList0.innerHTML= `<li>HP: ${trainerPokemonArray[0].hp}</li><li>Attack: ${trainerPokemonArray[0].attack}</li><li>Defense: ${trainerPokemonArray[0].defense}</li><li>Abilities:${trainerPokemonArray[0].ability[0]} </li><li>Type: ${trainerPokemonArray[0].types[0]}</li>`
-        // console.log(this.trainerPokemonArray[1])
+        console.log(this.trainerPokemonArray[1])
 
         // second pokemon
         let trainerDivTwo = document.getElementById(`${trainer}-pokemon-1`)
@@ -141,4 +144,11 @@ fuchsia.add(mary)
 fuchsia.add(sharna)
 fuchsia.add(noly)
 
+
+fuchsia.show("shahid");
+fuchsia.show("noly");
+fuchsia.show("sharna");
+fuchsia.show("mary")
+
 })
+
