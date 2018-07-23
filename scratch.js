@@ -13,43 +13,43 @@ class Gym {
         let trainerPokemonArray = Object.values(this.trainerContainer[`${trainer}`].trainerPokemon)
 
         // first pokemon
-        let trainerDivOne = document.getElementById(`${trainer}-pokemon-0`)
+        let trainerDivZero = document.getElementById(`${trainer}-pokemon-0`)
         let pokemonName0 = document.createElement("h4")
         pokemonName0.innerHTML= `${trainerPokemonArray[0].name}`
         pokemonName0.classList.add("text-capitalize")
-        trainerDivOne.appendChild(pokemonName0)
+        trainerDivZero.appendChild(pokemonName0)
         let pokeImage0 = document.createElement("img")
         pokeImage0.setAttribute("src", trainerPokemonArray[0].frontURL)
-        trainerDivOne.appendChild(pokeImage0)
+        trainerDivZero.appendChild(pokeImage0)
         let pokeStatList0 = document.createElement("ul")
-        trainerDivOne.appendChild(pokeStatList0)
+        trainerDivZero.appendChild(pokeStatList0)
         pokeStatList0.innerHTML = `<li>HP: ${trainerPokemonArray[0].hp}</li><li>Attack: ${trainerPokemonArray[0].attack}</li><li>Defense: ${trainerPokemonArray[0].defense}</li><li>Abilities: ${trainerPokemonArray[0].ability[0]}</li><li>Type: ${trainerPokemonArray[0].types[0]}</li><br />`
         // console.log(this.trainerPokemonArray[1])
 
         // second pokemon
-        let trainerDivTwo = document.getElementById(`${trainer}-pokemon-1`)
+        let trainerDivOne = document.getElementById(`${trainer}-pokemon-1`)
         let pokemonName1 = document.createElement("h4")
         pokemonName1.innerHTML= `${trainerPokemonArray[1].name}`
         pokemonName1.classList.add("text-capitalize")
-        trainerDivTwo.appendChild(pokemonName1)
+        trainerDivOne.appendChild(pokemonName1)
         let pokeImage1 = document.createElement("img")
         pokeImage1.setAttribute("src", trainerPokemonArray[1].frontURL)
-        trainerDivTwo.appendChild(pokeImage1)
+        trainerDivOne.appendChild(pokeImage1)
         let pokeStatList1 = document.createElement("ul")
-        trainerDivTwo.appendChild(pokeStatList1)
+        trainerDivOne.appendChild(pokeStatList1)
         pokeStatList1.innerHTML = `<li>HP: ${trainerPokemonArray[1].hp}</li><li>Attack: ${trainerPokemonArray[1].attack}</li><li>Defense: ${trainerPokemonArray[1].defense}</li><li>Abilities: ${trainerPokemonArray[1].ability[0]}</li><li>Type: ${trainerPokemonArray[1].types[0]}</li><br />`
 
         //third pokemon
-        let trainerDivThree = document.getElementById(`${trainer}-pokemon-2`)
+        let trainerDivTwo = document.getElementById(`${trainer}-pokemon-2`)
         let pokemonName2 = document.createElement("h4")
         pokemonName2.innerHTML= `${trainerPokemonArray[2].name}`
         pokemonName2.classList.add("text-capitalize")
-        trainerDivThree.appendChild(pokemonName2)
+        trainerDivTwo.appendChild(pokemonName2)
         let pokeImage2 = document.createElement("img")
         pokeImage2.setAttribute("src", trainerPokemonArray[2].frontURL)
-        trainerDivThree.appendChild(pokeImage2)
+        trainerDivTwo.appendChild(pokeImage2)
         let pokeStatList2 = document.createElement("ul")
-        trainerDivThree.appendChild(pokeStatList2)
+        trainerDivTwo.appendChild(pokeStatList2)
         pokeStatList2.innerHTML = `<li>HP: ${trainerPokemonArray[2].hp}</li><li>Attack: ${trainerPokemonArray[2].attack}</li><li>Defense: ${trainerPokemonArray[2].defense}</li><li>Abilities: ${trainerPokemonArray[2].ability[0]}</li><li>Type: ${trainerPokemonArray[2].types[0]}</li><br/>`
 
 
