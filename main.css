@@ -214,3 +214,15 @@ body {
 } .close:hover {
     color:#B6287B;
 }
+
+.modal-title {
+    font-family:'urae';
+    font-size:35px;
+    color:#B6287B;
+} #shahid-title {
+    color:gold;
+}
+
+.modal-header {
+    border-bottom:none;
+}
