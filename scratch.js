@@ -1,3 +1,5 @@
+window.addEventListener('load', () => {
+
 class Pokemon {
     constructor(name, pokeId, hp, attack, defense, frontURL) {
         this.name = name;
@@ -99,11 +101,14 @@ class Gym {
         trainerDivOne.appendChild(pokeStatList2)
         pokeStatList2.innerHTML= `<li>HP: ${trainerPokemonArray[2].hp}</li><li>Attack: ${trainerPokemonArray[2].attack}</li><li>Defense: ${trainerPokemonArray[2].defense}</li><li>Abilities:${trainerPokemonArray[2].ability[0]} </li><li>Type: ${trainerPokemonArray[2].types[0]}</li>`
 
-
-
     }
 
 
+
+}
+
+
+const updatePokemons = () => {
 
 }
 
@@ -136,8 +141,4 @@ fuchsia.add(mary)
 fuchsia.add(sharna)
 fuchsia.add(noly)
 
-
-// fuchsia.show("shahid")
-// fuchsia.show("noly")
-// fuchsia.show("sharna")
-// fuchsia.show("mary")
+})
