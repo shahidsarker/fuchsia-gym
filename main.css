@@ -249,5 +249,8 @@ li{
 .carousel-item li {
     list-style-type: none;
     padding:0;
-    margin-right: 35px;
+    margin-right: 40px;
+    background-color:#B6287B;
+    border-radius:15px;
+    margin-top:5px;
 }
