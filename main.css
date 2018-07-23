@@ -212,3 +212,27 @@ body {
 .modal-header {
     border-bottom: none;
 }
+
+#history {
+    height: 160px;
+    width: 850px;
+    border: 1px solid #FF19FF;
+    margin: auto;
+    margin-top: -170px;
+    animation: glowing 3000ms infinite;
+}
+
+#history p {
+    color: white;
+    padding-top: 23px;
+    padding-right: 28px;
+    padding-left: 28px;
+    text-indent: 10px;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 -10px #c4a300; }
+  40% { box-shadow: 0 0 20px #c4a300; }
+  60% { box-shadow: 0 0 20px #c4a300; }
+  100% { box-shadow: 0 0 -10px #c4a300; }
+}
