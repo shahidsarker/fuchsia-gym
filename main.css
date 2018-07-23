@@ -210,9 +210,10 @@ body {
 
 .close {
     color:white;
-    opacity:1;
+    opacity:0.5;
 } .close:hover {
-    color:#B6287B;
+    opacity:1;
+    color:white;
 }
 
 .modal-title {
