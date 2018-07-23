@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'urae';
-  src: url("urae_nium.ttf"); }
+  src: url("media/urae_nium.ttf"); }
 body {
   background-color: #0B0A10;
   font-family: 'Montserrat'; }
@@ -141,7 +141,7 @@ body {
 #history {
   height: 160px;
   width: 850px;
-  border: 1px solid #FF19FF;
+  border: 1px solid #B6287B;
   margin: auto;
   margin-top: 30px;
   animation: glowing 3000ms infinite; }

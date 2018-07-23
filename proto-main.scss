@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'urae';
-    src: url('urae_nium.ttf');
+    src: url('media/urae_nium.ttf');
 }
+$black:  #0B0A10;
+$poison:#B6287B;
 
 body {
     background-color: #0B0A10;
@@ -20,7 +22,7 @@ body {
                 height: 350px;
                 overflow: hidden;
                 transition: box-shadow 0.2s;
-                border: 1px #B6287B solid;
+                border: 1px $poison solid;
                 display: flex;
                 align-content: center;
                 align-items: center;
@@ -28,7 +30,7 @@ body {
             
             .trainer:hover {
                 cursor: pointer;
-                box-shadow: 0px 0px 80px #B6287B;
+                box-shadow: 0px 0px 80px $poison;
             }
             
             #trainer-shahid:hover {
@@ -48,7 +50,7 @@ body {
                 font-size: 70px;
                 color: black;
                 display: none;
-                background-color: #B6287B;
+                background-color: $poison;
                 height: 90px;
                 padding-right: 10px;
                 padding-left: 10px;
@@ -179,7 +181,7 @@ body {
             .modal-title {
                 font-family: 'urae';
                 font-size: 35px;
-                color: #B6287B;
+                color: $poison;
             }
             
             #shahid-title {
@@ -204,7 +206,7 @@ body {
     #history {
         height: 160px;
         width: 850px;
-        border: 1px solid #FF19FF;
+        border: 1px solid $poison;
         margin: auto;
         margin-top: 30px;
         animation: glowing 3000ms infinite;
