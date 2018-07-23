@@ -26,9 +26,9 @@ class Trainer {
     add(id) {
         // toggle between two APIs based on availability
         //      pokeapi request (works with name or id of pokemon)
-        axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`).then((response) => {
+        // axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`).then((response) => {
             //      NYCDA-specific api (works with id only)
-            // axios.get(`https://pokeapi-nycda.firebaseio.com/pokemon/${id}.json`).then((response) => {
+            axios.get(`https://pokeapi-nycda.firebaseio.com/pokemon/${id}.json`).then((response) => {
             let pokedata = response.data
             let pokeName = pokedata.name;
             let pokeId = pokedata.id;
@@ -85,18 +85,18 @@ class Gym {
         let trainerDivTwo = document.getElementById(`${trainer}-pokemon-1`)
         let pokeImage1 = document.createElement("img")
         pokeImage1.setAttribute("src",trainerPokemonArray[1].frontURL)
-        trainerDivOne.appendChild(pokeImage1)
+        trainerDivTwo.appendChild(pokeImage1)
         let pokeStatList1 = document.createElement("ul")
-        trainerDivOne.appendChild(pokeStatList1)
+        trainerDivTwo.appendChild(pokeStatList1)
         pokeStatList1.innerHTML= `<li>HP: ${trainerPokemonArray[1].hp}</li><li>Attack: ${trainerPokemonArray[1].attack}</li><li>Defense: ${trainerPokemonArray[1].defense}</li><li>Abilities:${trainerPokemonArray[1].ability[0]} </li><li>Type: ${trainerPokemonArray[1].types[0]}</li>`
 
         //third pokemon
         let trainerDivThree = document.getElementById(`${trainer}-pokemon-2`)
         let pokeImage2 = document.createElement("img")
         pokeImage2.setAttribute("src",trainerPokemonArray[2].frontURL)
-        trainerDivOne.appendChild(pokeImage2)
+        trainerDivThree.appendChild(pokeImage2)
         let pokeStatList2 = document.createElement("ul")
-        trainerDivOne.appendChild(pokeStatList2)
+        trainerDivThree.appendChild(pokeStatList2)
         pokeStatList2.innerHTML= `<li>HP: ${trainerPokemonArray[2].hp}</li><li>Attack: ${trainerPokemonArray[2].attack}</li><li>Defense: ${trainerPokemonArray[2].defense}</li><li>Abilities:${trainerPokemonArray[2].ability[0]} </li><li>Type: ${trainerPokemonArray[2].types[0]}</li>`
 
 
@@ -115,9 +115,9 @@ shahid.add(129)
 shahid.add(126)
 
 let mary = new Trainer("mary")
-mary.add("combee")
-mary.add("magneton")
-mary.add("exeggutor")
+mary.add(415)
+mary.add(82)
+mary.add(103)
 
 let sharna = new Trainer("sharna")
 sharna.add(94)
@@ -125,9 +125,9 @@ sharna.add(151)
 sharna.add(35)
 
 let noly = new Trainer("noly")
-noly.add("bellsprout")
-noly.add("charmander")
-noly.add("pidgeotto")
+noly.add(69)
+noly.add(4)
+noly.add(17)
 
 
 let fuchsia = new Gym("fuchsia")
@@ -137,7 +137,7 @@ fuchsia.add(sharna)
 fuchsia.add(noly)
 
 
-fuchsia.show("shahid")
-fuchsia.show("noly")
-fuchsia.show("sharna")
-fuchsia.show("mary")
+// fuchsia.show("shahid")
+// fuchsia.show("noly")
+// fuchsia.show("sharna")
+// fuchsia.show("mary")
