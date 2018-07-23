@@ -6,11 +6,6 @@
 body {
     background-color: #0B0A10;
     font-family: 'Montserrat';
-    height: 100vh;
-}
-
-.container {
-    height: 100vh;
 }
 
 .round {
@@ -210,17 +205,7 @@ body {
 }
 
 .modal-header {
-<<<<<<< HEAD
-<<<<<<< HEAD
     border-bottom:none;
-}
-
-=======
-    border-bottom: none;
-}
->>>>>>> e14aee347030004e9a23a9f588bfaf0215b0fa72
-=======
-    border-bottom: none;
 }
 
 #history {
@@ -228,7 +213,7 @@ body {
     width: 850px;
     border: 1px solid #FF19FF;
     margin: auto;
-    margin-top: -170px;
+    margin-top: 30px;
     animation: glowing 3000ms infinite;
 }
 
