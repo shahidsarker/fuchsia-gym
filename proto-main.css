@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'urae';
+  src: url("media/urae_nium.ttf"); }
+body {
+  background-color: #0B0A10;
+  font-family: 'Montserrat'; }
+  body .row {
+    margin-top: 10px;
+    /*-- Animation Keyframes --*/
+    /*// animation*/ }
+    body .row .round {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 2px; }
+    body .row .trainer {
+      background-color: white;
+      height: 350px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+      border: 1px #B6287B solid;
+      display: flex;
+      align-content: center;
+      align-items: center; }
+    body .row .trainer:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 80px #B6287B; }
+    body .row #trainer-shahid:hover {
+      box-shadow: 0px 0px 80px gold; }
+    body .row #shahid-name {
+      background-color: gold; }
+    body .row .trainer:hover .trainer-img {
+      filter: invert(100%); }
+    body .row .trainer-name {
+      font-family: 'urae';
+      font-size: 70px;
+      color: black;
+      display: none;
+      background-color: #B6287B;
+      height: 90px;
+      padding-right: 10px;
+      padding-left: 10px;
+      border: 1px black solid;
+      box-shadow: 10px 10px black;
+      z-index: 50;
+      position: absolute;
+      left: 50px;
+      text-align: center;
+      width: 175px; }
+    body .row .trainer:hover .trainer-name {
+      display: inline;
+      margin: auto; }
+    body .row #trainer-sharna img {
+      z-index: 0;
+      width: 310px; }
+    body .row #trainer-mary img {
+      z-index: 0;
+      width: 350px; }
+    body .row #trainer-shahid {
+      border: 1px gold solid; }
+    body .row #trainer-shahid img {
+      z-index: 0;
+      width: 300px; }
+    body .row #trainer-noly img {
+      z-index: 0;
+      width: 300px; }
+    body .row .col-sm-6 {
+      color: #FF19FF;
+      margin-top: 30px;
+      margin-left: 266px;
+      font-size: 86px;
+      font-family: 'urae';
+      letter-spacing: 8px; }
+    body .row .col-sm-3 img {
+      height: 148px;
+      transform: rotate(23deg);
+      animation: pulse 1s infinite;
+      animation-duration: 4s; }
+@keyframes pulse {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.3; }
+  100% {
+    opacity: 1; } }
+    body .row #splash:nth-child(1) {
+      position: absolute;
+      z-index: -1;
+      margin-top: -452px;
+      width: 1520px; }
+    body .row .col-sm-6 {
+      animation: neon .08s ease-in-out infinite alternate; }
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92); }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2; } }
+  body #first_splash {
+    position: absolute;
+    z-index: -1;
+    margin-top: -536px;
+    margin-left: 585px;
+    height: 581px;
+    opacity: 0.2; }
+  body #second_splash {
+    position: absolute;
+    z-index: -1;
+    margin-top: -522px;
+    margin-left: -205px;
+    opacity: 0.2; }
+  body #third_splash {
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    margin-left: 841px;
+    opacity: 0.3; }
+
+.modal-content {
+  background: #190517;
+  /* Old browsers */
+  color: white; }
+  .modal-content .modal-header {
+    border-bottom: none;
+    padding-bottom: 0; }
+    .modal-content .modal-header .modal-title {
+      font-family: 'urae';
+      font-size: 35px;
+      color: #B6287B; }
+    .modal-content .modal-header #shahid-title {
+      color: gold; }
+  .modal-content .close {
+    color: white;
+    opacity: 0.5; }
+  .modal-content .close:hover {
+    opacity: 1;
+    color: white; }
+  .modal-content .modal-body {
+    padding-top: 0; }
+
+#history {
+  height: 160px;
+  width: 850px;
+  border: 1px solid #B6287B;
+  margin: auto;
+  margin-top: 30px;
+  animation: glowing 3000ms infinite; }
+
+#history p {
+  color: white;
+  padding-top: 23px;
+  padding-right: 28px;
+  padding-left: 28px;
+  text-indent: 10px; }
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #c4a300; }
+  40% {
+    box-shadow: 0 0 20px #c4a300; }
+  60% {
+    box-shadow: 0 0 20px #c4a300; }
+  100% {
+    box-shadow: 0 0 -10px #c4a300; } }
+
+/*# sourceMappingURL=proto-main.css.map */
