@@ -137,7 +137,7 @@ fuchsia.add(sharna)
 fuchsia.add(noly)
 
 
-// fuchsia.show("shahid")
-// fuchsia.show("noly")
-// fuchsia.show("sharna")
-// fuchsia.show("mary")
+fuchsia.show("shahid")
+fuchsia.show("noly")
+fuchsia.show("sharna")
+fuchsia.show("mary")
