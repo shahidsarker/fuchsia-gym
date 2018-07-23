@@ -149,30 +149,30 @@ body {
             }
         }
     
-    #first_splash {
-        position: absolute;
-        z-index: -1;
-        margin-top: -536px;
-        margin-left: 585px;
-        height: 581px;
-        opacity: 0.2;
-    }
-    
-    #second_splash {
-        position: absolute;
-        z-index: -1;
-        margin-top: -522px;
-        margin-left: -205px;
-        opacity: 0.2;
-    }
-    
-    #third_splash {
-        position: absolute;
-        z-index: -1;
-        margin-top: 10px;
-        margin-left: 841px;
-        opacity: 0.3;
-    }
+        #first_splash {
+            position: absolute;
+            z-index: -1;
+            margin-top: -662px;
+            margin-left: 585px;
+            height: 581px;
+            opacity: 0.2;
+        }
+        
+        #second_splash {
+            position: absolute;
+            z-index: -1;
+            margin-top: -629px;
+            margin-left: -205px;
+            opacity: 0.2;
+        }
+        
+        #third_splash {
+            position: absolute;
+            z-index: -1;
+            margin-top: -40px;
+            margin-left: 841px;
+            opacity: 0.3;
+        }
 } 
     
     .modal-content {
@@ -209,7 +209,10 @@ body {
     .carousel-item li {
         list-style-type: none;
         padding:0;
-        margin-right: 35px;
+        margin-right: 40px;
+        background-color:#B6287B;
+        border-radius:15px;
+        margin-top:5px;
     }
     
     
