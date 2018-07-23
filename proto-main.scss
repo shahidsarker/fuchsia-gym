@@ -167,42 +167,36 @@ body {
         margin-left: 841px;
         opacity: 0.3;
     }
-    
+} 
     
     .modal-content {
         background: #190517;
         /* Old browsers */
         color: white;
-    }
-}
-    
-    .modal-body {
-        padding-top:0;
-    }
-    
-    .close {
-        color: white;
-        opacity: 0.5;
-    }
-    
-    .close:hover {
-        opacity: 1;
-        color: white;
-    }
-    
-    .modal-title {
-        font-family: 'urae';
-        font-size: 35px;
-        color: #B6287B;
-    }
-    
-    #shahid-title {
-        color: gold;
-    }
-    
-    .modal-header {
-        border-bottom:none;
-        padding-bottom:0;
+        .modal-header {
+            border-bottom:none;
+            padding-bottom:0;
+            .modal-title {
+                font-family: 'urae';
+                font-size: 35px;
+                color: #B6287B;
+            }
+            
+            #shahid-title {
+                color: gold;
+            }
+        }
+        .close {
+            color: white;
+            opacity: 0.5;
+        }
+        .close:hover {
+            opacity: 1;
+            color: white;
+        }
+        .modal-body {
+            padding-top:0;
+        }
     }
     
     
