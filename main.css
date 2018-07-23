@@ -8,6 +8,10 @@ body {
     font-family: 'Montserrat';
 }
 
+li{
+    text-transform:capitalize;
+}
+
 .round {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -180,7 +184,7 @@ body {
 
 .modal-content {
     background: #190517;
-    /* Old browsers */
+    letter-spacing: 1px;
     color: white;
 }
 
@@ -235,10 +239,10 @@ body {
 
 
 @keyframes glowing {
-  0% { box-shadow: 0 0 -10px #c4a300; }
-  40% { box-shadow: 0 0 20px #c4a300; }
-  60% { box-shadow: 0 0 20px #c4a300; }
-  100% { box-shadow: 0 0 -10px #c4a300; }
+  0% { box-shadow: 0 0 -10px #B6287B; }
+  40% { box-shadow: 0 0 20px #B6287B; }
+  60% { box-shadow: 0 0 20px #B6287B; }
+  100% { box-shadow: 0 0 -10px #B6287B; }
 }
 
 .carousel-item li {
