@@ -156,12 +156,6 @@ li{
     opacity: 0.2;
 }
 
-#gym-info {
-    color: #B6287B;
-    font-size: 30px;
-    margin-top: 20px;
-}
-
 #second_splash {
     position: absolute;
     z-index: -1;
