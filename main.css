@@ -161,7 +161,7 @@ body {
 #second_splash {
     position: absolute;
     z-index: -1;
-    margin-top: -830px;
+    margin-top: -629px;
     margin-left: -205px;
     opacity: 0.2;
 }
@@ -169,7 +169,7 @@ body {
 #third_splash {
     position: absolute;
     z-index: -1;
-    margin-top: -129px;
+    margin-top: -40px;
     margin-left: 841px;
     opacity: 0.3;
 }
@@ -240,4 +240,4 @@ body {
   60% { box-shadow: 0 0 20px #c4a300; }
   100% { box-shadow: 0 0 -10px #c4a300; }
 }
->>>>>>> e2d4b38de75135b21332de1b253153eb726d88fc
+
