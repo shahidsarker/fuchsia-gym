@@ -19,7 +19,7 @@ class Gym {
         trainerDivOne.appendChild(pokeImage0)
         let pokeStatList0 = document.createElement("ul")
         trainerDivOne.appendChild(pokeStatList0)
-        pokeStatList0.innerHTML = `<li>HP: ${trainerPokemonArray[0].hp}</li><li>Attack: ${trainerPokemonArray[0].attack}</li><li>Defense: ${trainerPokemonArray[0].defense}</li><li>Abilities:${trainerPokemonArray[0].ability[0]} </li><li>Type: ${trainerPokemonArray[0].types[0]}</li>`
+        pokeStatList0.innerHTML = `<li>HP: ${trainerPokemonArray[0].hp}</li><li>Attack: ${trainerPokemonArray[0].attack}</li><li>Defense: ${trainerPokemonArray[0].defense}</li><li>Abilities: ${trainerPokemonArray[0].ability[0]}, ${trainerPokemonArray[0].ability[1]} </li><li>Type: ${trainerPokemonArray[0].types[0]}</li><br />`
         // console.log(this.trainerPokemonArray[1])
 
         // second pokemon
@@ -29,7 +29,7 @@ class Gym {
         trainerDivTwo.appendChild(pokeImage1)
         let pokeStatList1 = document.createElement("ul")
         trainerDivTwo.appendChild(pokeStatList1)
-        pokeStatList1.innerHTML = `<li>HP: ${trainerPokemonArray[1].hp}</li><li>Attack: ${trainerPokemonArray[1].attack}</li><li>Defense: ${trainerPokemonArray[1].defense}</li><li>Abilities:${trainerPokemonArray[1].ability[0]} </li><li>Type: ${trainerPokemonArray[1].types[0]}</li>`
+        pokeStatList1.innerHTML = `<li>HP: ${trainerPokemonArray[1].hp}</li><li>Attack: ${trainerPokemonArray[1].attack}</li><li>Defense: ${trainerPokemonArray[1].defense}</li><li>Abilities: ${trainerPokemonArray[1].ability[0]}, ${trainerPokemonArray[1].ability[1]}  </li><li>Type: ${trainerPokemonArray[1].types[0]}</li><br />`
 
         //third pokemon
         let trainerDivThree = document.getElementById(`${trainer}-pokemon-2`)
@@ -38,7 +38,7 @@ class Gym {
         trainerDivThree.appendChild(pokeImage2)
         let pokeStatList2 = document.createElement("ul")
         trainerDivThree.appendChild(pokeStatList2)
-        pokeStatList2.innerHTML = `<li>HP: ${trainerPokemonArray[2].hp}</li><li>Attack: ${trainerPokemonArray[2].attack}</li><li>Defense: ${trainerPokemonArray[2].defense}</li><li>Abilities:${trainerPokemonArray[2].ability[0]} </li><li>Type: ${trainerPokemonArray[2].types[0]}</li>`
+        pokeStatList2.innerHTML = `<li>HP: ${trainerPokemonArray[2].hp}</li><li>Attack: ${trainerPokemonArray[2].attack}</li><li>Defense: ${trainerPokemonArray[2].defense}</li><li>Abilities: ${trainerPokemonArray[2].ability[0]}, ${trainerPokemonArray[2].ability[0]}</li><li>Type: ${trainerPokemonArray[2].types[0]}</li><br/>`
 
 
 
