@@ -4,6 +4,8 @@
 body {
   background-color: #0B0A10;
   font-family: 'Montserrat'; }
+  body li {
+    text-transform: capitalize; }
   body .row {
     margin-top: 10px;
     /*-- Animation Keyframes --*/
@@ -118,7 +120,7 @@ body {
 
 .modal-content {
   background: #190517;
-  /* Old browsers */
+  letter-spacing: 1px;
   color: white; }
   .modal-content .modal-header {
     border-bottom: none;
@@ -138,6 +140,11 @@ body {
   .modal-content .modal-body {
     padding-top: 0; }
 
+.carousel-item li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
 #history {
   height: 160px;
   width: 850px;
@@ -145,22 +152,21 @@ body {
   margin: auto;
   margin-top: 30px;
   animation: glowing 3000ms infinite; }
-
-#history p {
-  color: white;
-  padding-top: 23px;
-  padding-right: 28px;
-  padding-left: 28px;
-  text-indent: 10px; }
+  #history p {
+    color: white;
+    padding-top: 23px;
+    padding-right: 28px;
+    padding-left: 28px;
+    text-indent: 10px; }
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 -10px #c4a300; }
+    box-shadow: 0 0 -10px #B6287B; }
   40% {
-    box-shadow: 0 0 20px #c4a300; }
+    box-shadow: 0 0 20px #B6287B; }
   60% {
-    box-shadow: 0 0 20px #c4a300; }
+    box-shadow: 0 0 20px #B6287B; }
   100% {
-    box-shadow: 0 0 -10px #c4a300; } }
+    box-shadow: 0 0 -10px #B6287B; } }
 
 /*# sourceMappingURL=proto-main.css.map */

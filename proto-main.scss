@@ -2,12 +2,16 @@
     font-family: 'urae';
     src: url('media/urae_nium.ttf');
 }
+
 $black:  #0B0A10;
 $poison:#B6287B;
 
 body {
     background-color: #0B0A10;
     font-family: 'Montserrat';
+    li {
+        text-transform: capitalize;
+    }
         .row {
             margin-top: 10px;
             .round {
@@ -173,7 +177,7 @@ body {
     
     .modal-content {
         background: #190517;
-        /* Old browsers */
+        letter-spacing: 1px;
         color: white;
         .modal-header {
             border-bottom:none;
@@ -200,7 +204,12 @@ body {
             padding-top:0;
         }
     }
-    
+
+    .carousel-item li {
+        list-style-type: none;
+        padding:0;
+        margin: 0;
+    }
     
     
     #history {
@@ -210,23 +219,23 @@ body {
         margin: auto;
         margin-top: 30px;
         animation: glowing 3000ms infinite;
+         p {
+            color: white;
+            padding-top: 23px;
+            padding-right: 28px;
+            padding-left: 28px;
+            text-indent: 10px;
+        }
     }
-    
-    #history p {
-        color: white;
-        padding-top: 23px;
-        padding-right: 28px;
-        padding-left: 28px;
-        text-indent: 10px;
-    }
+
     
     
     
     @keyframes glowing {
-      0% { box-shadow: 0 0 -10px #c4a300; }
-      40% { box-shadow: 0 0 20px #c4a300; }
-      60% { box-shadow: 0 0 20px #c4a300; }
-      100% { box-shadow: 0 0 -10px #c4a300; }
+      0% { box-shadow: 0 0 -10px $poison; }
+      40% { box-shadow: 0 0 20px $poison; }
+      60% { box-shadow: 0 0 20px $poison; }
+      100% { box-shadow: 0 0 -10px $poison; }
     }
 
 
