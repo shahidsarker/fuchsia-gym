@@ -6,6 +6,11 @@
 body {
     background-color:#0B0A10;
     font-family:'Montserrat';
+    height:100vh;
+}
+
+.container {
+    height:100vh;
 }
 
 .round {

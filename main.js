@@ -1,4 +1,3 @@
-
 // Constructer for class Pokemon.
 class Pokemon {
     constructor(name, image, hp, attack, defense, abilities, type) {
@@ -14,7 +13,6 @@ class Pokemon {
 
 // Find value from search to pass into api.
 document.getElementById("trainer-shahid").addEventListener("click", function(event) {
-    
     let pokemons_shahid = ['mewtwo', 'magmar', 'magikarp'];
     for (let i = 0; i < 3; i++) {
         let search_value = pokemons_shahid[i];
@@ -78,12 +76,22 @@ const search = (search_value) => {
 
 // Function to display a pokemon.
 const displayPokemon = (pokemonToDisplay) => {
+
+
    
-    let mainDiv = document.getElementById('information');
+    let mainDiv = document.createElement("div");
+    mainDiv.setAttribute('id', 'information');
+
+    let classes = document.getElementsByClassName('col-sm-4');
+    for (let index = 0; index < classes.length; index++) {
+        classes[index].appendChild('mainDiv');
+    }
+
+
+
     let column = document.createElement("div");
     column.setAttribute('class', 'column');
     mainDiv.appendChild(column);
-
 
     let name_section = document.createElement('div');
     name_section.setAttribute('class', 'name');
@@ -134,9 +142,6 @@ const displayPokemon = (pokemonToDisplay) => {
 }
 
 // Function to update pokemonc haracteristic.
-const updateCharacteristic = (characteristicId, value) => {
-    document.getElementById(characteristicId).getElementsByTagName('span')[0].innerText = value;
-}
-
-
-
+// const updateCharacteristic = (characteristicId, value) => {
+//     document.getElementById(characteristicId).getElementsByTagName('span')[0].innerText = value;
+// }
